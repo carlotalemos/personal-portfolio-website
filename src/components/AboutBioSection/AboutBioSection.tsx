@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { personalInfo } from "@/lib/data";
 
 export default function AboutBioSection() {
@@ -16,9 +17,12 @@ export default function AboutBioSection() {
             </p>
 
             <div className="flex justify-center mt-3">
-                <button className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-jost font-normal hover:bg-gray-200 transition-colors">
+                <Link
+                    href="/docs/cv.pdf"
+                    className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-jost font-normal hover:bg-gray-400 transition-colors"
+                >
                     VIEW CV
-                </button>
+                </Link>
             </div>
         </section>
     );

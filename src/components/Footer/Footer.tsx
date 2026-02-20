@@ -15,7 +15,7 @@ export default function Footer() {
   const urls = {
     linkedin: 'https://www.linkedin.com/in/carlotamlemos',
     github: 'https://github.com/carlotalemos',
-    cv: '/cv.pdf',
+    cv: '/docs/cv.pdf',
     email: 'mailto:carlota.lemos48@gmail.com'
   };
 

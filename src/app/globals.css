@@ -4,7 +4,6 @@
   --color-background: #0F0F13;
   --color-foreground: #0F0F13;
 
-  /* Fonts */
   --font-jost: "Jost", sans-serif;
   --font-syncopate: "Syncopate", sans-serif;
 }
@@ -56,9 +55,6 @@
   }
 }
 
-/* =========================
-   Utilities do projeto (mantém comportamento)
-   ========================= */
 .font-jost {
   font-family: var(--font-jost);
   font-weight: 400;
