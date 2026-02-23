@@ -41,7 +41,7 @@ export const timeline: TimelineItem[] = [
     organization: "ISEP",
     date: "JAN 2026",
     description: "Developed a railway logistics management system, integrating warehouse and freight operations with route planning, inventory control, and network optimization algorithms to ensure efficient and reliable railroad operations.",
-    certificate: "/certificates/logistics-on-rails.pdf"
+    certificate: "/docs/logistics-on-rails.pdf"
   },
   {
     title: "Design Department Coordinator",
@@ -60,7 +60,7 @@ export const timeline: TimelineItem[] = [
     organization: "ISEP",
     date: "JUL 2025",
     description: "Developed a railway network simulation system in Java with a JavaFX interface, enabling map creation, train routing and scheduling, and passenger and cargo transport monitoring, supported by route optimization algorithms and system modelling.",
-    certificate: "/certificates/railroad-simulator.pdf"
+    certificate: "/docs/railroad-simulator.pdf"
   },
   {
     title: "Design Department Member",
@@ -73,7 +73,7 @@ export const timeline: TimelineItem[] = [
     organization: "ENEI2025",
     date: "APR 2025",
     description: "During the event, I attended talks and workshops on emerging technologies, took part in networking activities with students and professionals, and explored new perspectives within the field of Computer Engineering.",
-    certificate: "/certificates/ENEI_2025.pdf"
+    certificate: "/docs/ENEI_2025.pdf"
   },
   {
     title: "Informatics Department Member",
