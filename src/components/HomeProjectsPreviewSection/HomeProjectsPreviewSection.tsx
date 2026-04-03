@@ -23,14 +23,9 @@ export default function HomeProjectsPreviewSection() {
                     const isEven = index % 2 === 0;
 
                     return (
-                        <div
-                            key={project.slug}
-                            className="flex items-center"
-                            style={{ gap: cardGap }}
-                        >
+                        <div key={project.slug} className="flex items-center" style={{ gap: cardGap }}>
                             {isEven ? (
                                 <>
-                                    {/* Text on left */}
                                     <div className="flex-1 flex flex-col justify-center text-right">
                     <span className="text-xs text-white/50 uppercase tracking-wider">
                       {project.technology}
@@ -43,7 +38,6 @@ export default function HomeProjectsPreviewSection() {
                                         </Link>
                                     </div>
 
-                                    {/* Image on right */}
                                     <Link
                                         href={`/projects/${project.slug}`}
                                         className={`${projectImageCssWidth} ${projectImageCssHeight}`}
@@ -59,7 +53,6 @@ export default function HomeProjectsPreviewSection() {
                                 </>
                             ) : (
                                 <>
-                                    {/* Image on left */}
                                     <Link
                                         href={`/projects/${project.slug}`}
                                         className={`${projectImageCssWidth} ${projectImageCssHeight}`}
@@ -73,14 +66,13 @@ export default function HomeProjectsPreviewSection() {
                                         />
                                     </Link>
 
-                                    {/* Text on right */}
                                     <div className="flex-1 flex flex-col justify-center text-left">
                     <span className="text-xs text-white/50 uppercase tracking-wider">
                       {project.technology}
                     </span>
                                         <Link
                                             href={`/projects/${project.slug}`}
-                                            className="text-2xl font-medim mt-2 underline font-jost hover:text-gray-400 transition-colors"
+                                            className="text-2xl font-medium mt-2 underline font-jost hover:text-gray-400 transition-colors"
                                         >
                                             {project.title}
                                         </Link>

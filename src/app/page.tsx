@@ -3,7 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import HomeHeroSection from "@/components/HomeHeroSection/HomeHeroSection";
 import HomeRotatingBanner from "@/components/HomeRotatingBanner/HomeRotatingBanner";
 import HomeAboutPreviewSection from "@/components/HomeAboutPreviewSection/HomeAboutPreviewSection";
-import HomeProjectsPreviewSection from "@/components/ProjectsGridSection/ProjectsGridSection";
+import HomeProjectsPreviewSection from "@/components/HomeProjectsPreviewSection/HomeProjectsPreviewSection";
 
 export default function Home() {
     return (
