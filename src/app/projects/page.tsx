@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer/Footer";
 
-import ProjectsHeroSection from "@/components/ProjectsHeroSection/ProjectsHeroSection";
+import PageHeroSection from "@/components/PageHeroSection/PageHeroSection";
 import PageRotatingBanner from "@/components/PageRotatingBanner/PageRotatingBanner";
 import ProjectsGridSection from "@/components/ProjectsGridSection/ProjectsGridSection";
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
     return (
         <div className="text-white min-h-screen pt-32">
-            <ProjectsHeroSection />
+            <PageHeroSection title="projects" />
             <PageRotatingBanner />
             <ProjectsGridSection />
             <Footer />

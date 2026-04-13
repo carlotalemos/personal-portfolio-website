@@ -1,4 +1,4 @@
-import { PersonalInfo, Skill, Language, TimelineItem, Project, RotatingTextConfig } from './types';
+import { PersonalInfo, Skill, Language, TimelineItem, Project } from './types';
 
 export const personalInfo: PersonalInfo = {
   name: "Carlota Lemos",
@@ -231,18 +231,3 @@ export const projects: Project[] = [
     images: ["/assets/images/sem1pi/1.jpg", "/assets/images/sem1pi/2.jpg", "/assets/images/sem1pi/3.jpg", "/assets/images/sem1pi/4.jpg", "/assets/images/sem1pi/5.jpg", "/assets/images/sem1pi/6.jpg", "/assets/images/sem1pi/7.jpg", "/assets/images/sem1pi/9.jpg"]
   }
 ];
-
-export const rotatingTexts: Record<string, RotatingTextConfig> = {
-  home: {
-    items: ["welcome", "2º year student", "computer engineer", "frontend", "portfolio", "© 2026"],
-    speed: 30
-  },
-  banner: {
-    items: ["CARLOTA LEMOS"],
-    speed: 30
-  },
-  footer: {
-    items: ["Linkedin", "GITHUB", "cv"],
-    speed: 30
-  }
-};
