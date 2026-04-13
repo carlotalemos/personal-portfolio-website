@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { personalInfo } from "@/lib/data";
+import Divider from "@/components/Divider/Divider";
 
 export default function AboutBioSection() {
     return (
         <section className="max-w-4xl mx-auto px-8 py-12">
-            <div className="mb-8">
-                <div className="w-16 h-0.5 bg-white/50 mx-auto mb-8"></div>
-            </div>
+            <Divider />
 
             <p className="text-white text-lg leading-relaxed mb-6 font-jost font-medium text-[22px]">
                 {personalInfo.bio}

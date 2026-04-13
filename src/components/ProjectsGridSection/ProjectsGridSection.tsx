@@ -1,12 +1,11 @@
 import { projects } from "@/lib/data";
 import HomeProjectRow from "@/components/HomeProjectRow/HomeProjectRow";
+import Divider from "@/components/Divider/Divider";
 
 export default function ProjectsGridSection() {
     return (
         <section className="max-w-4xl mx-auto px-8 py-12">
-            <div className="mb-8">
-                <div className="w-16 h-0.5 bg-white/50 mx-auto mb-8"></div>
-            </div>
+            <Divider />
             <div className="space-y-8">
                 {projects.map((project, index) => (
                     <HomeProjectRow
