@@ -1,4 +1,4 @@
-import { PersonalInfo, Skill, Language, TimelineItem, Project, RotatingTextConfig } from './types';
+import { PersonalInfo, Skill, Language, TimelineItem, Project} from './types';
 
 export const personalInfo: PersonalInfo = {
   name: "Carlota Lemos",
