@@ -5,9 +5,12 @@ export const personalInfo: PersonalInfo = {
   title: "Computer Engineering Student",
   bio: "I'm Carlota Lemos, a Computer Engineering student, building a strong academic foundation in software engineering while focusing on Front-End development to create seamless and user-friendly digital experiences.",
   bioParagraph2: "Currently studying at ISEP (Instituto Superior de Engenharia do Porto), I'm in my 2nd year and expected to complete my BSc in Computer Engineering in 2027. My passion lies in Front-End development, working with technologies like React, and I also enjoy building applications with Java.",
+  bioHomeExtended:
+    "I am currently pursuing a bachelor's degree in Computer Engineering at Instituto Superior de Engenharia do Porto (ISEP), expected to be completed in 2027. Since the beginning of my studies, I have been particularly drawn to Front-End development, where I discovered the perfect balance between creativity and technology. I enjoy working with React and modern web technologies to build intuitive interfaces, while strengthening my foundation in Java, an essential part of my academic journey.",
+  email: "carlota.lemos48@gmail.com",
   linkedin: "https://www.linkedin.com/in/carlotamlemos",
   github: "https://github.com/carlotalemos",
-  cv: "/docs/cv.pdf"
+  cv: "/docs/cv.pdf",
 };
 
 export const skills: Skill[] = [

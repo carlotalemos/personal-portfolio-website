@@ -24,7 +24,7 @@ export default function ProjectGallerySection({ project }: Props) {
                         >
                             {project.images.map((image, index) => (
                                 <div
-                                    key={index}
+                                    key={image}
                                     className="relative flex-shrink-0 bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                                     style={{
                                         width: "600px",

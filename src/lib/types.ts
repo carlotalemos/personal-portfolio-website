@@ -3,6 +3,7 @@ export interface PersonalInfo {
   title: string;
   bio: string;
   bioParagraph2: string;
+  bioHomeExtended?: string;
   email?: string;
   linkedin?: string;
   github?: string;
@@ -24,7 +25,7 @@ export interface TimelineItem {
   organization: string;
   date: string;
   description: string;
-  certificate?: string; // ← adiciona este campo opcional
+  certificate?: string;
 }
 
 export interface Project {

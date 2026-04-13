@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer/Footer";
 
 import AboutHeroSection from "@/components/AboutHeroSection/AboutHeroSection";
-import AboutRotatingBanner from "@/components/AboutRotatingBanner/AboutRotatingBanner";
+import PageRotatingBanner from "@/components/PageRotatingBanner/PageRotatingBanner";
 import AboutBioSection from "@/components/AboutBioSection/AboutBioSection";
 import AboutSkillsSection from "@/components/AboutSkillsSection/AboutSkillsSection";
 import AboutLanguagesSection from "@/components/AboutLanguagesSection/AboutLanguagesSection";
@@ -22,7 +22,7 @@ export default function AboutPage() {
     return (
         <div className="text-white min-h-screen pt-32">
             <AboutHeroSection />
-            <AboutRotatingBanner />
+            <PageRotatingBanner />
             <AboutBioSection />
             <AboutSkillsSection />
             <AboutLanguagesSection />

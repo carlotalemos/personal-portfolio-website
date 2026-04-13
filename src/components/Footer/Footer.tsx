@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from 'react';
+import { personalInfo } from '@/lib/data';
 
 export default function Footer() {
   const speed = 40;
@@ -12,19 +13,11 @@ export default function Footer() {
     email: 'linear-gradient(90deg,#30A646,#ffffff)'
   };
 
-  const urls = {
-    linkedin: 'https://www.linkedin.com/in/carlotamlemos',
-    github: 'https://github.com/carlotalemos',
-    cv: '/docs/cv.pdf',
-    email: 'mailto:carlota.lemos48@gmail.com'
-  };
-
   const words = [
-    { key: 'linkedin', label: 'linkedin', grad: gradients.linkedin, url: urls.linkedin },
-    { key: 'github', label: 'github', grad: gradients.github, url: urls.github },
-    { key: 'cv', label: 'cv', grad: gradients.cv, url: urls.cv },
-    { key: 'email', label: 'email', grad: gradients.email, url: urls.email }
-
+    { key: 'linkedin', label: 'linkedin', grad: gradients.linkedin, url: personalInfo.linkedin ?? '#' },
+    { key: 'github', label: 'github', grad: gradients.github, url: personalInfo.github ?? '#' },
+    { key: 'cv', label: 'cv', grad: gradients.cv, url: personalInfo.cv ?? '#' },
+    { key: 'email', label: 'email', grad: gradients.email, url: `mailto:${personalInfo.email}` },
   ];
 
   const gradientStyle = (g?: string): React.CSSProperties => ({
@@ -62,7 +55,7 @@ export default function Footer() {
                   href={w.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-block px-6 ${itemClass}`}
+                  className={itemClass}
                   style={gradientStyle(w.grad)}
                 >
                   {w.label}
@@ -78,7 +71,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   tabIndex={-1}
-                  className={`inline-block px-6 ${itemClass}`}
+                  className={itemClass}
                   style={gradientStyle(w.grad)}
                 >
                   {w.label}
