@@ -160,7 +160,7 @@ export const projects: Project[] = [
     ],
     technologies: ["Java", "C", "Assembly (RISC-V)", "Oracle Database", "PL/SQL", "Data Structures"],
     githubURL: "https://github.com/carlotalemos/LAPR3-integrative-project",
-    certificate: "/certificates/logistics-on-rails.pdf",
+    certificate: "/docs/logistics-on-rails.pdf",
     images: ["/assets/images/sem3pi/1.jpg", "/assets/images/sem3pi/2.jpg", "/assets/images/sem3pi/3.jpg", "/assets/images/sem3pi/4.jpg", "/assets/images/sem3pi/5.jpg", "/assets/images/sem3pi/6.jpg", "/assets/images/sem3pi/7.jpg", "/assets/images/sem3pi/8.jpg", "/assets/images/sem3pi/9.jpg", "/assets/images/sem3pi/10.jpg", "/assets/images/sem3pi/11.jpg", "/assets/images/sem3pi/12.jpg", "/assets/images/sem3pi/13.jpg", "/assets/images/sem3pi/14.jpg", "/assets/images/sem3pi/15.jpg"]
   },
   {
@@ -218,7 +218,7 @@ export const projects: Project[] = [
     ],
     technologies: ["Java", "JavaFX", "Python", "UML", "Object-Oriented Programming"],
     githubURL: "https://github.com/carlotalemos/LAPR2-integrative-project",
-    certificate: "/certificates/railroad-simulator.pdf",
+    certificate: "/docs/railroad-simulator.pdf",
     images: ["/assets/images/sem2pi/1.jpg", "/assets/images/sem2pi/2.jpg", "/assets/images/sem2pi/3.jpg", "/assets/images/sem2pi/4.jpg", "/assets/images/sem2pi/5.jpg", "/assets/images/sem2pi/6.jpg", "/assets/images/sem2pi/7.jpg"]
   },
   {
