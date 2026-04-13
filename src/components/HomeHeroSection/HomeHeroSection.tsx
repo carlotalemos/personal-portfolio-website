@@ -5,7 +5,7 @@ export default function HomeHeroSection() {
     return (
         <section className="relative h-screen flex items-center justify-center">
             <div
-                className="absolute left-1/2 z-0 pointer-events-none"
+                className="absolute z-0 pointer-events-none"
                 style={{
                     top: "-400px",
                     left: "52%",

@@ -6,6 +6,7 @@ import ProjectGallerySection from "@/components/ProjectGallerySection/ProjectGal
 import ProjectNavigationSection from "@/components/ProjectNavigationSection/ProjectNavigationSection";
 
 import { projects } from "@/lib/data";
+import { siteUrl } from "@/lib/config";
 
 type ProjectPageProps = {
     params: Promise<{ slug: string }>;
@@ -51,5 +52,10 @@ export async function generateMetadata({ params }: ProjectPageProps) {
     return {
         title: `${project.title} - Carlota Lemos`,
         description: project.description,
+        openGraph: {
+            title: `${project.title} - Carlota Lemos`,
+            description: project.description,
+            images: [{ url: `${siteUrl}${project.image}` }],
+        },
     };
 }

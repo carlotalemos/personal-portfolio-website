@@ -16,35 +16,30 @@ export default function HomeAboutPreviewSection() {
                 {personalInfo.bioHomeExtended}
             </p>
 
-            <div className="flex items-center justify-center gap-4 mt-8">
+            <div className="flex items-center justify-center mt-8">
                 <Link
                     href="/about"
-                    className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-jost font-normal hover:bg-gray-400 transition-colors"
+                    className="flex items-center gap-4"
                 >
-                    MORE ABOUT ME
+                    <span className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-jost font-normal hover:bg-gray-400 transition-colors">
+                        MORE ABOUT ME
+                    </span>
+                    <span className="flex items-center justify-center bg-white text-black w-14 h-14 rounded-full hover:bg-gray-400 transition-colors" aria-hidden="true">
+                        <svg
+                            className="w-5 h-5 transform rotate-320"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                        </svg>
+                    </span>
                 </Link>
-
-                <Link
-                    href="/about"
-                    aria-label="next"
-                    className="flex items-center justify-center bg-white text-black w-14 h-14 rounded-full hover:bg-gray-400 transition-colors"
-                >
-                    <svg
-                        className="w-5 h-5 transform rotate-320"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                    </svg>
-                </Link>
-
             </div>
         </section>
     );

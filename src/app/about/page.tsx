@@ -8,6 +8,7 @@ import AboutSkillsSection from "@/components/AboutSkillsSection/AboutSkillsSecti
 import AboutLanguagesSection from "@/components/AboutLanguagesSection/AboutLanguagesSection";
 import AboutTimelineSection from "@/components/AboutTimelineSection/AboutTimelineSection";
 import AboutProjectsButtonsSection from "@/components/AboutProjectsButtonsSection/AboutProjectsButtonsSection";
+import { siteUrl } from "@/lib/config";
 
 export const metadata: Metadata = {
     title: "About — Carlota Lemos",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "About — Carlota Lemos",
         description: "Computer Engineering student at ISEP, focused on Front-End development with React and Next.js.",
+        images: [{ url: `${siteUrl}/profile-image.png` }],
     },
 };
 

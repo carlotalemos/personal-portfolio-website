@@ -4,6 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import PageHeroSection from "@/components/PageHeroSection/PageHeroSection";
 import PageRotatingBanner from "@/components/PageRotatingBanner/PageRotatingBanner";
 import ProjectsGridSection from "@/components/ProjectsGridSection/ProjectsGridSection";
+import { siteUrl } from "@/lib/config";
 
 export const metadata: Metadata = {
     title: "Projects — Carlota Lemos",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Projects — Carlota Lemos",
         description: "A showcase of my academic and personal projects in software engineering and front-end development.",
+        images: [{ url: `${siteUrl}/profile-image.png` }],
     },
 };
 
