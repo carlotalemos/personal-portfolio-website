@@ -1,6 +1,4 @@
-import { projects } from "@/lib/data";
-
-type Project = (typeof projects)[number];
+import { Project } from "@/lib/types";
 
 type Props = {
     project: Project;
@@ -30,9 +28,9 @@ export default function ProjectDetailsSection({ project }: Props) {
                         Technologies
                     </h3>
                     <div className="flex flex-wrap gap-3">
-                        {project.technologies.map((tech, index) => (
+                        {project.technologies.map((tech) => (
                             <span
-                                key={index}
+                                key={tech}
                                 className="px-4 py-2 border border-white/20 rounded-full text-white/70 text-sm font-jost hover:border-white/40 hover:text-white transition-colors"
                             >
                 {tech}
@@ -146,7 +144,7 @@ export default function ProjectDetailsSection({ project }: Props) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {project.features.map((feature, index) => (
                             <div
-                                key={index}
+                                key={feature}
                                 className="group relative border-l-2 border-white/10 pl-6 py-4 hover:border-white/30 transition-all duration-300"
                             >
                                 <div className="absolute -left-1 top-0 text-7xl font-bold text-white/5 group-hover:text-white/10 transition-colors duration-300 font-syncopate">

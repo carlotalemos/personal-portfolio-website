@@ -1,74 +1,62 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
-    gap: string;
-    reverse?: boolean;
-
+    href: string;
     technology: string;
     title: string;
-    titleClassName?: string;
-
     imageSrc: string;
     imageAlt: string;
-
-    projectImageCssWidth: string;
-    projectImageCssHeight: string;
-    projectImageWidth: number;
-    projectImageHeight: number;
+    reverse?: boolean;
 };
 
 export default function HomeProjectRow({
-                                           gap,
-                                           reverse = false,
+                                           href,
                                            technology,
                                            title,
-                                           titleClassName = "text-2xl font-medium mt-2 underline font-jost",
                                            imageSrc,
                                            imageAlt,
-                                           projectImageCssWidth,
-                                           projectImageCssHeight,
-                                           projectImageWidth,
-                                           projectImageHeight,
+                                           reverse = false,
                                        }: Props) {
-    if (!reverse) {
-        return (
-            <div className="flex items-center" style={{ gap }}>
-                <div className="flex-1 flex flex-col justify-center text-right">
-          <span className="text-xs text-white/50 uppercase tracking-wider">
-            {technology}
-          </span>
-                    <h3 className={titleClassName}>{title}</h3>
-                </div>
-                <div className={`${projectImageCssWidth} ${projectImageCssHeight}`}>
-                    <Image
-                        src={imageSrc}
-                        alt={imageAlt}
-                        width={projectImageWidth}
-                        height={projectImageHeight}
-                        className="object-cover w-full h-full"
-                    />
-                </div>
-            </div>
-        );
-    }
+    const textBlock = (
+        <div className={`flex-1 flex flex-col justify-center ${reverse ? "text-left" : "text-right"}`}>
+            <span className="text-xs text-white/50 uppercase tracking-wider">
+                {technology}
+            </span>
+            <Link
+                href={href}
+                className="text-2xl font-medium mt-2 underline font-jost hover:text-gray-400 transition-colors"
+            >
+                {title}
+            </Link>
+        </div>
+    );
+
+    const imageBlock = (
+        <Link href={href} className="w-[400px] h-[400px] flex-shrink-0">
+            <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={400}
+                height={400}
+                className="object-cover w-full h-full hover:opacity-80 transition-opacity"
+            />
+        </Link>
+    );
 
     return (
-        <div className="flex items-center" style={{ gap }}>
-            <div className={`${projectImageCssWidth} ${projectImageCssHeight}`}>
-                <Image
-                    src={imageSrc}
-                    alt={imageAlt}
-                    width={projectImageWidth}
-                    height={projectImageHeight}
-                    className="object-cover w-full h-full"
-                />
-            </div>
-            <div className="flex-1 flex flex-col justify-center text-left">
-        <span className="text-xs text-white/50 uppercase tracking-wider">
-          {technology}
-        </span>
-                <h3 className={titleClassName}>{title}</h3>
-            </div>
+        <div className="flex items-center gap-12">
+            {reverse ? (
+                <>
+                    {imageBlock}
+                    {textBlock}
+                </>
+            ) : (
+                <>
+                    {textBlock}
+                    {imageBlock}
+                </>
+            )}
         </div>
     );
 }

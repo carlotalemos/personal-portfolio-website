@@ -42,8 +42,3 @@ export interface Project {
   websiteURL?: string;
   images?: string[];
 }
-
-export interface RotatingTextConfig {
-  items: string[];
-  speed?: number;
-}

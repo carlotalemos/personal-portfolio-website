@@ -1,27 +1,19 @@
 import Link from "next/link";
+import { personalInfo } from "@/lib/data";
 
 export default function HomeAboutPreviewSection() {
     return (
         <section className="max-w-4xl mx-auto px-8 py-20">
-            <h2 className="relative z-20 text-5xl font-bold mt-20 mb-8 text-center font-syncopate text-[30px]">
+            <h2 className="relative z-20 font-bold mt-20 mb-8 text-center font-syncopate text-[30px]">
                 about <span className="text-white/50">—</span> I
             </h2>
 
             <p className="text-white text-lg leading-relaxed mb-6 font-jost font-medium text-[22px]">
-                I&apos;m Carlota Lemos, a Computer Engineering student, building a strong
-                academic foundation in software engineering while focusing on Front-End
-                development to create seamless and user-friendly digital experiences.
+                {personalInfo.bio}
             </p>
 
             <p className="text-white/50 text-base leading-relaxed mb-8 font-jost font-medium text-[22px]">
-                I am currently pursuing a bachelor&apos;s degree in Computer Engineering
-                at Instituto Superior de Engenharia do Porto (ISEP), expected to be
-                completed in 2027. Since the beginning of my studies, I have been
-                particularly drawn to Front-End development, where I discovered the
-                perfect balance between creativity and technology. I enjoy working with
-                React and modern web technologies to build intuitive interfaces, while
-                strengthening my foundation in Java, an essential part of my academic
-                journey.
+                {personalInfo.bioParagraph2}
             </p>
 
             <div className="flex items-center justify-center gap-4 mt-8">
@@ -42,7 +34,7 @@ export default function HomeAboutPreviewSection() {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        aria-hidden
+                        aria-hidden="true"
                     >
                         <path
                             strokeLinecap="round"
@@ -52,6 +44,7 @@ export default function HomeAboutPreviewSection() {
                         />
                     </svg>
                 </Link>
+
             </div>
         </section>
     );

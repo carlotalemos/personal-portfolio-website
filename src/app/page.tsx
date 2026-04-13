@@ -7,7 +7,7 @@ import HomeProjectsPreviewSection from "@/components/HomeProjectsPreviewSection/
 
 export default function Home() {
     return (
-        <div className=" text-white min-h-screen pt-64 items-center">
+        <div className="text-white min-h-screen pt-64 items-center">
             <HomeHeroSection />
             <HomeRotatingBanner />
             <HomeAboutPreviewSection />

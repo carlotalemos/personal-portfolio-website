@@ -3,27 +3,35 @@ import { PersonalInfo, Skill, Language, TimelineItem, Project, RotatingTextConfi
 export const personalInfo: PersonalInfo = {
   name: "Carlota Lemos",
   title: "Computer Engineering Student",
-  bio: "I'm Carlota Lemos, a Computer Engineering student, building a strong academic foundation in software engineering while focusing on Front-End development to create seamless and user-friendly digital experiences.",
-  bioParagraph2: "Currently studying at ISEP (Instituto Superior de Engenharia do Porto), I'm in my 2nd year and expected to complete my BSc in Computer Engineering in 2027. My passion lies in Front-End development, working with technologies like React, and I also enjoy building applications with Java.",
+  bio: "I'm Carlota Lemos, a Computer Engineering student, building a strong\n" +
+      "                academic foundation in software engineering while focusing on Front-End\n" +
+      "                development to create seamless and user-friendly digital experiences.",
+  bioParagraph2: "I am currently pursuing a bachelor's degree in Computer Engineering\n" +
+      "                at Instituto Superior de Engenharia do Porto (ISEP), expected to be\n" +
+      "                completed in 2027. Since the beginning of my studies, I have been\n" +
+      "                particularly drawn to Front-End development, where I discovered the\n" +
+      "                perfect balance between creativity and technology. I enjoy working with\n" +
+      "                React and modern web technologies to build intuitive interfaces, while\n" +
+      "                strengthening my foundation in Java, an essential part of my academic\n" +
+      "                journey.",
   linkedin: "https://www.linkedin.com/in/carlotamlemos",
   github: "https://github.com/carlotalemos",
-  cv: "/cv.pdf"
+  cv: "/docs/CV_CARLOTALEMOS.pdf",
 };
 
 export const skills: Skill[] = [
   { name: "Java", category: "technical" },
-  { name: "C", category: "technical" },
+  { name: "JavaFX", category: "technical" },
+  { name: "C/C++", category: "technical" },
   { name: "Assembly", category: "technical" },
   { name: "Python", category: "technical" },
   { name: "SQL", category: "technical" },
-  { name: "HML", category: "technical" },
+  { name: "HTML", category: "technical" },
   { name: "CSS", category: "technical" },
+  { name: "Next.js", category: "technical" },
   { name: "React", category: "technical" },
   { name: "Tailwind CSS", category: "technical" },
   { name: "JavaFX", category: "technical" },
-  { name: "macOS", category: "tools" },
-  { name: "Microsoft", category: "tools" },
-  { name: "Linux", category: "tools" },
   { name: "Figma", category: "tools" },
   { name: "Affinity", category: "tools" },
   { name: "Canva", category: "tools" }
@@ -36,6 +44,19 @@ export const languages: Language[] = [
 ];
 
 export const timeline: TimelineItem[] = [
+  {
+    title: "Frontend Developer",
+    organization: "Adhara Academy",
+    date: "APR 2026 - Present",
+    description: "Working part-time as a Frontend Developer at Adhara Academy, I contribute to the development of the Adhara QBank platform, a scalable and adaptive web solution designed for medical exam preparation. I am responsible for implementing responsive and high-performance user interfaces, ensuring a seamless and intuitive user experience across study and test environments. My work includes developing complex UI components, interactive workflows, and data-driven dashboards, while maintaining a strong focus on usability, performance, and clean design aligned with modern frontend best practices."
+  },
+  {
+    title: "Participant",
+    organization: "ENEI2026",
+    date: "APR 2026",
+    description: "During the event, I attended talks and workshops on emerging technologies, took part in networking activities with students and professionals, and explored new perspectives within the field of Computer Engineering.",
+    certificate: "/docs/ENEI_2026.pdf"
+  },
   {
     title: "Best Project - Logistics on Rails",
     organization: "ISEP",
@@ -214,32 +235,17 @@ export const projects: Project[] = [
         "\n" +
         "This project demonstrates strong proficiency in linear algebra, numerical methods, and software engineering principles, highlighting the ability to translate mathematical concepts into practical computational solutions.",
     features: [
-        "Mean face computation and difference matrix construction",
-        "Eigenfaces generation and normalization",
-        "Face reconstruction with configurable number of eigenfaces",
-        "CSV import and export of image matrices",
-        "Covariance matrix calculation and eigen decomposition",
-        "Dimensionality reduction using principal components",
-        "Face identification using Euclidean distance",
-        "Command-line and interactive execution modes",
+      "Mean face computation and difference matrix construction",
+      "Eigenfaces generation and normalization",
+      "Face reconstruction with configurable number of eigenfaces",
+      "CSV import and export of image matrices",
+      "Covariance matrix calculation and eigen decomposition",
+      "Dimensionality reduction using principal components",
+      "Face identification using Euclidean distance",
+      "Command-line and interactive execution modes",
     ],
     technologies: ["Java", "Linear Algebra", "PCA", "CSV Processing", "Eigenfaces", "Face Recognition", "Apache Commons Math", "File I/O"],
     githubURL: "https://github.com/carlotalemos/LAPR1-integrative-project",
     images: ["/assets/images/sem1pi/1.jpg", "/assets/images/sem1pi/2.jpg", "/assets/images/sem1pi/3.jpg", "/assets/images/sem1pi/4.jpg", "/assets/images/sem1pi/5.jpg", "/assets/images/sem1pi/6.jpg", "/assets/images/sem1pi/7.jpg", "/assets/images/sem1pi/9.jpg"]
   }
 ];
-
-export const rotatingTexts: Record<string, RotatingTextConfig> = {
-  home: {
-    items: ["welcome", "2º year student", "computer engineer", "frontend", "portfolio", "© 2026"],
-    speed: 30
-  },
-  banner: {
-    items: ["CARLOTA LEMOS"],
-    speed: 30
-  },
-  footer: {
-    items: ["Linkedin", "GITHUB", "cv"],
-    speed: 30
-  }
-};

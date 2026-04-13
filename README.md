@@ -12,7 +12,7 @@ I’m especially focused on **Front-End development**, building modern interface
 - **LinkedIn**: https://www.linkedin.com/in/carlotamlemos
 - **GitHub**: https://github.com/carlotalemos
 - **Email**: carlota.lemos48@gmail.com
-- **CV (PDF)**: [Download CV](./public/docs/cv.pdf)
+- **CV (PDF)**: [Download CV](./public/docs/CV_CARLOTALEMOS.pdf)
 
 ## Tech Stack
 

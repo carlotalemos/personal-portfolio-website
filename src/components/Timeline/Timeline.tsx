@@ -3,8 +3,8 @@ import { timeline } from '@/lib/data';
 export default function Timeline() {
   return (
       <div className="space-y-16">
-        {timeline.map((item, index) => (
-            <div key={index} className="space-y-6">
+        {timeline.map((item) => (
+            <div key={item.title} className="space-y-6">
               {/* Title */}
               <h3 className="text-3xl md:text-4xl tracking-wide font-jost font-bold">
                 {item.title}
@@ -26,17 +26,17 @@ export default function Timeline() {
               </p>
               {/* Certificate button */}
               {item.certificate && (
-                <a
-                    href={item.certificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-jost font-normal text-sm hover:bg-gray-400 transition-colors"
-                >
+                  <a
+                      href={item.certificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-jost font-normal text-sm hover:bg-gray-400 transition-colors"
+                  >
                     VIEW CERTIFICATE
-                </a>
-            )}
-        </div>
-    ))}
-    </div>
+                  </a>
+              )}
+            </div>
+        ))}
+      </div>
   );
 }

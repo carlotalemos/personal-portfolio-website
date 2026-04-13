@@ -20,7 +20,6 @@ export default function HomeHeroSection() {
                     width={1200}
                     height={3000}
                     priority
-                    unoptimized
                     className="object-contain w-full"
                 />
             </div>
@@ -28,7 +27,7 @@ export default function HomeHeroSection() {
             <div className="relative z-10 w-full -mt-0 md:-mt-8 lg:-mt-14">
                 <ScrollingText
                     text="carlota lemos"
-                    speed={80}
+                    speed={40}
                     className="font-syncopate text-[128px] leading-none tracking-tighter"
                 />
             </div>

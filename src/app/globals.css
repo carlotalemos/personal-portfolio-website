@@ -2,7 +2,7 @@
 
 @theme {
   --color-background: #0F0F13;
-  --color-foreground: #0F0F13;
+  --color-foreground: #FFFFFF;
 
   --font-jost: "Jost", sans-serif;
   --font-syncopate: "Syncopate", sans-serif;
@@ -51,7 +51,7 @@
   body {
     background: var(--background);
     color: var(--foreground);
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-jost), sans-serif;
   }
 }
 
