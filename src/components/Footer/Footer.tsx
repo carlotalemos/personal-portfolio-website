@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 
 export default function Footer() {
   const speed = 40;
@@ -70,7 +70,7 @@ export default function Footer() {
               ))}
             </span>
 
-            <span className="inline-block" aria-hidden style={{ pointerEvents: 'auto' }}>
+            <span className="inline-block" aria-hidden="true" style={{ pointerEvents: 'auto' }}>
               {words.map((w) => (
                 <a
                   key={`b-${w.key}`}

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Footer from "@/components/Footer/Footer";
 
 import AboutHeroSection from "@/components/AboutHeroSection/AboutHeroSection";
@@ -7,6 +8,15 @@ import AboutSkillsSection from "@/components/AboutSkillsSection/AboutSkillsSecti
 import AboutLanguagesSection from "@/components/AboutLanguagesSection/AboutLanguagesSection";
 import AboutTimelineSection from "@/components/AboutTimelineSection/AboutTimelineSection";
 import AboutProjectsButtonsSection from "@/components/AboutProjectsButtonsSection/AboutProjectsButtonsSection";
+
+export const metadata: Metadata = {
+    title: "About — Carlota Lemos",
+    description: "Computer Engineering student at ISEP, focused on Front-End development with React and Next.js.",
+    openGraph: {
+        title: "About — Carlota Lemos",
+        description: "Computer Engineering student at ISEP, focused on Front-End development with React and Next.js.",
+    },
+};
 
 export default function AboutPage() {
     return (

@@ -20,7 +20,6 @@ export default function HomeHeroSection() {
                     width={1200}
                     height={3000}
                     priority
-                    unoptimized
                     className="object-contain w-full"
                 />
             </div>

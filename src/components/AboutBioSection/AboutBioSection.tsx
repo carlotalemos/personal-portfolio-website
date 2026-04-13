@@ -18,7 +18,7 @@ export default function AboutBioSection() {
 
             <div className="flex justify-center mt-3">
                 <Link
-                    href="/docs/cv.pdf"
+                    href={personalInfo.cv ?? "/docs/cv.pdf"}
                     className="flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-jost font-normal hover:bg-gray-400 transition-colors"
                 >
                     VIEW CV

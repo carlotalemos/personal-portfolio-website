@@ -4,7 +4,7 @@ export default function AboutLanguagesSection() {
     return (
         <section className="max-w-4xl mx-auto px-8 py-12">
             <h2 className="text-center font-syncopate text-[30px] mb-8">
-                languages <span className="text-white/50">—</span> IV
+                languages <span className="text-white/50">—</span> V
             </h2>
             <div className="space-y-6 max-w-2xl mx-auto">
                 {languages.map((lang) => (

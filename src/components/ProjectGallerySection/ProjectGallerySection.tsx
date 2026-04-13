@@ -1,8 +1,6 @@
 import Image from "next/image";
 
-import { projects } from "@/lib/data";
-
-type Project = (typeof projects)[number];
+import { Project } from "@/lib/types";
 
 type Props = {
     project: Project;

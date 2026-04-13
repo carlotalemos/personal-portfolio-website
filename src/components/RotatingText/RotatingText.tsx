@@ -1,5 +1,3 @@
-'use client';
-
 interface ScrollingTextProps {
     text: string;
     className?: string;

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HomeAboutPreviewSection() {
     return (
         <section className="max-w-4xl mx-auto px-8 py-20">
-            <h2 className="relative z-20 text-5xl font-bold mt-20 mb-8 text-center font-syncopate text-[30px]">
+            <h2 className="relative z-20 font-bold mt-20 mb-8 text-center font-syncopate text-[30px]">
                 about <span className="text-white/50">—</span> I
             </h2>
 
@@ -42,7 +42,7 @@ export default function HomeAboutPreviewSection() {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        aria-hidden
+                        aria-hidden="true"
                     >
                         <path
                             strokeLinecap="round"
@@ -52,6 +52,7 @@ export default function HomeAboutPreviewSection() {
                         />
                     </svg>
                 </Link>
+
             </div>
         </section>
     );

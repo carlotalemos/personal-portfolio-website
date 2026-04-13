@@ -7,7 +7,7 @@ export const personalInfo: PersonalInfo = {
   bioParagraph2: "Currently studying at ISEP (Instituto Superior de Engenharia do Porto), I'm in my 2nd year and expected to complete my BSc in Computer Engineering in 2027. My passion lies in Front-End development, working with technologies like React, and I also enjoy building applications with Java.",
   linkedin: "https://www.linkedin.com/in/carlotamlemos",
   github: "https://github.com/carlotalemos",
-  cv: "/cv.pdf"
+  cv: "/docs/cv.pdf"
 };
 
 export const skills: Skill[] = [
@@ -16,7 +16,7 @@ export const skills: Skill[] = [
   { name: "Assembly", category: "technical" },
   { name: "Python", category: "technical" },
   { name: "SQL", category: "technical" },
-  { name: "HML", category: "technical" },
+  { name: "HTML", category: "technical" },
   { name: "CSS", category: "technical" },
   { name: "React", category: "technical" },
   { name: "Tailwind CSS", category: "technical" },
